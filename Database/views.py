@@ -5,6 +5,7 @@ from datetime import datetime
 def index(request):
     initialTime1 = datetime.now()
     test = "Benchmarking the Web Servers"
+    print(test)
     # for i in range(10000):
     #     if len(test) < 200000000:
     #         test += test
