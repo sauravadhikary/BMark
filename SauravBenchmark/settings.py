@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'epsjtnioeq)zq@0u1j3g)!=frpg%#65^k2ot1rm7r-xkedyp%&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get("DEBUG_STATE") == 'True'
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
 
@@ -125,5 +125,5 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static/'),
     'static/',
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfile/')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
